@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DC424642-D3E9-4443-A1E1-4FD08BFD89AA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ShareThis</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2BD4CE56-43D0-478A-9450-2F1B5F13CEE2</key>
+		<string>https://github.com/robotafterall/ShareThis.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ShareThis.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2BD4CE56-43D0-478A-9450-2F1B5F13CEE2</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/robotafterall/ShareThis.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2BD4CE56-43D0-478A-9450-2F1B5F13CEE2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2BD4CE56-43D0-478A-9450-2F1B5F13CEE2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ShareThis</string>
+		</dict>
+	</array>
+</dict>
+</plist>

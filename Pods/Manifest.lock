@@ -1,0 +1,19 @@
+PODS:
+  - cocoa-oauth (0.0.1):
+    - NSData+Base64 (~> 1.0)
+  - Facebook-iOS-SDK (3.1.1)
+  - NSData+Base64 (1.0.0)
+  - REComposeViewController (0.0.1)
+
+DEPENDENCIES:
+  - cocoa-oauth (= 0.0.1)
+  - Facebook-iOS-SDK (= 3.1.1)
+  - REComposeViewController (= 0.0.1)
+
+SPEC CHECKSUMS:
+  cocoa-oauth: 8f4c8b77c77ac660de37f8125557c4ec09b0118a
+  Facebook-iOS-SDK: 5fc068ebfd8c8c9b0fad476bc36dbbf1fffeebc8
+  NSData+Base64: 4819562faee4544e3cf5703f2139820b09732b28
+  REComposeViewController: 346eb738a68ddcce77b3d771695a91c7af1a5701
+
+COCOAPODS: 0.26.2

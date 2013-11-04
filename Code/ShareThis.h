@@ -7,8 +7,6 @@ typedef enum {
     STServiceTypeTwitter,
     STServiceTypeMail,
     STServiceTypeMessage,
-    STServiceTypeInstapaper,
-    STServiceTypePocket,
     STServiceTypeReadability,
     STServiceTypeServiceCount
 } STServiceType;
@@ -32,7 +30,6 @@ extern NSString *const AppWillTerminateNotificationName;
 @end
 
 @interface ShareThis : NSObject
-@property (nonatomic, strong) NSString *pocketAPIKey;
 @property (nonatomic, strong) NSString *readabilityKey;
 @property (nonatomic, strong) NSString *readabilitySecret;
 

@@ -1,0 +1,4 @@
+platform :ios, '5.0'
+pod 'cocoa-oauth', '0.0.1'
+pod 'REComposeViewController', '0.0.1'
+pod 'Facebook-iOS-SDK', '3.1.1'

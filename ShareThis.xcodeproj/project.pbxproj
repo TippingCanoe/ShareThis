@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74F56045CF5D4CBE91281AEA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FFC6C50B1B04E1BA17A01A7 /* libPods.a */; };
+		84A06D9C182807E000E94B96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A06D9B182807E000E94B96 /* Foundation.framework */; };
+		84A06DAA182807E000E94B96 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A06DA9182807E000E94B96 /* XCTest.framework */; };
+		84A06DAB182807E000E94B96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A06D9B182807E000E94B96 /* Foundation.framework */; };
+		84A06DAD182807E000E94B96 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A06DAC182807E000E94B96 /* UIKit.framework */; };
+		84A06DB0182807E000E94B96 /* libShareThis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A06D98182807E000E94B96 /* libShareThis.a */; };
+		84A06DB6182807E000E94B96 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84A06DB4182807E000E94B96 /* InfoPlist.strings */; };
+		84A06DB8182807E000E94B96 /* ShareThisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A06DB7182807E000E94B96 /* ShareThisTests.m */; };
+		84A06DE41828081F00E94B96 /* EmailService.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A06DCA1828081F00E94B96 /* EmailService.m */; };
+		84A06DE51828081F00E94B96 /* FacebookService.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A06DCC1828081F00E94B96 /* FacebookService.m */; };
+		84A06DE81828081F00E94B96 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A06DD31828081F00E94B96 /* KeychainItemWrapper.m */; };
+		84A06DE91828081F00E94B96 /* MessageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A06DD51828081F00E94B96 /* MessageService.m */; };
+		84A06DEC1828081F00E94B96 /* ReadabilityActivityItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A06DDB1828081F00E94B96 /* ReadabilityActivityItem.m */; };
+		84A06DED1828081F00E94B96 /* ReadabilityService.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A06DDD1828081F00E94B96 /* ReadabilityService.m */; };
+		84A06DEE1828081F00E94B96 /* ReadLaterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A06DDF1828081F00E94B96 /* ReadLaterService.m */; };
+		84A06DEF1828081F00E94B96 /* ShareThis.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A06DE11828081F00E94B96 /* ShareThis.m */; };
+		84A06DF01828081F00E94B96 /* TwitterService.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A06DE31828081F00E94B96 /* TwitterService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84A06DAE182807E000E94B96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A06D90182807E000E94B96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84A06D97182807E000E94B96;
+			remoteInfo = ShareThis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84A06D96182807E000E94B96 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		84A06D98182807E000E94B96 /* libShareThis.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libShareThis.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A06D9B182807E000E94B96 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84A06D9F182807E000E94B96 /* ShareThis-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShareThis-Prefix.pch"; sourceTree = "<group>"; };
+		84A06DA8182807E000E94B96 /* ShareThisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareThisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A06DA9182807E000E94B96 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		84A06DAC182807E000E94B96 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		84A06DB3182807E000E94B96 /* ShareThisTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShareThisTests-Info.plist"; sourceTree = "<group>"; };
+		84A06DB5182807E000E94B96 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84A06DB7182807E000E94B96 /* ShareThisTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareThisTests.m; sourceTree = "<group>"; };
+		84A06DC21828081F00E94B96 /* Instapaper-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Instapaper-Icon.png"; sourceTree = "<group>"; };
+		84A06DC31828081F00E94B96 /* Instapaper-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Instapaper-Icon@2x.png"; sourceTree = "<group>"; };
+		84A06DC41828081F00E94B96 /* Pocket-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pocket-Icon.png"; sourceTree = "<group>"; };
+		84A06DC51828081F00E94B96 /* Pocket-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pocket-Icon@2x.png"; sourceTree = "<group>"; };
+		84A06DC61828081F00E94B96 /* Readability-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Readability-Icon.png"; sourceTree = "<group>"; };
+		84A06DC71828081F00E94B96 /* Readability-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Readability-Icon@2x.png"; sourceTree = "<group>"; };
+		84A06DC91828081F00E94B96 /* EmailService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmailService.h; path = ../Code/EmailService.h; sourceTree = "<group>"; };
+		84A06DCA1828081F00E94B96 /* EmailService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmailService.m; path = ../Code/EmailService.m; sourceTree = "<group>"; };
+		84A06DCB1828081F00E94B96 /* FacebookService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookService.h; path = ../Code/FacebookService.h; sourceTree = "<group>"; };
+		84A06DCC1828081F00E94B96 /* FacebookService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookService.m; path = ../Code/FacebookService.m; sourceTree = "<group>"; };
+		84A06DD21828081F00E94B96 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		84A06DD31828081F00E94B96 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		84A06DD41828081F00E94B96 /* MessageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageService.h; path = ../Code/MessageService.h; sourceTree = "<group>"; };
+		84A06DD51828081F00E94B96 /* MessageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageService.m; path = ../Code/MessageService.m; sourceTree = "<group>"; };
+		84A06DDA1828081F00E94B96 /* ReadabilityActivityItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReadabilityActivityItem.h; path = ../Code/ReadabilityActivityItem.h; sourceTree = "<group>"; };
+		84A06DDB1828081F00E94B96 /* ReadabilityActivityItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReadabilityActivityItem.m; path = ../Code/ReadabilityActivityItem.m; sourceTree = "<group>"; };
+		84A06DDC1828081F00E94B96 /* ReadabilityService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReadabilityService.h; path = ../Code/ReadabilityService.h; sourceTree = "<group>"; };
+		84A06DDD1828081F00E94B96 /* ReadabilityService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReadabilityService.m; path = ../Code/ReadabilityService.m; sourceTree = "<group>"; };
+		84A06DDE1828081F00E94B96 /* ReadLaterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReadLaterService.h; path = ../Code/ReadLaterService.h; sourceTree = "<group>"; };
+		84A06DDF1828081F00E94B96 /* ReadLaterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReadLaterService.m; path = ../Code/ReadLaterService.m; sourceTree = "<group>"; };
+		84A06DE01828081F00E94B96 /* ShareThis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShareThis.h; path = ../Code/ShareThis.h; sourceTree = "<group>"; };
+		84A06DE11828081F00E94B96 /* ShareThis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShareThis.m; path = ../Code/ShareThis.m; sourceTree = "<group>"; };
+		84A06DE21828081F00E94B96 /* TwitterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwitterService.h; path = ../Code/TwitterService.h; sourceTree = "<group>"; };
+		84A06DE31828081F00E94B96 /* TwitterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwitterService.m; path = ../Code/TwitterService.m; sourceTree = "<group>"; };
+		9F8D3D26FA4641DCBDB6E6A4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		9FFC6C50B1B04E1BA17A01A7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84A06D95182807E000E94B96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A06D9C182807E000E94B96 /* Foundation.framework in Frameworks */,
+				74F56045CF5D4CBE91281AEA /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A06DA5182807E000E94B96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A06DAA182807E000E94B96 /* XCTest.framework in Frameworks */,
+				84A06DAD182807E000E94B96 /* UIKit.framework in Frameworks */,
+				84A06DAB182807E000E94B96 /* Foundation.framework in Frameworks */,
+				84A06DB0182807E000E94B96 /* libShareThis.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84A06D8F182807E000E94B96 = {
+			isa = PBXGroup;
+			children = (
+				84A06DC11828081F00E94B96 /* Assets */,
+				84A06D9D182807E000E94B96 /* ShareThis */,
+				84A06DB1182807E000E94B96 /* ShareThisTests */,
+				84A06D9A182807E000E94B96 /* Frameworks */,
+				84A06D99182807E000E94B96 /* Products */,
+				9F8D3D26FA4641DCBDB6E6A4 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		84A06D99182807E000E94B96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A06D98182807E000E94B96 /* libShareThis.a */,
+				84A06DA8182807E000E94B96 /* ShareThisTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A06D9A182807E000E94B96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84A06D9B182807E000E94B96 /* Foundation.framework */,
+				84A06DA9182807E000E94B96 /* XCTest.framework */,
+				84A06DAC182807E000E94B96 /* UIKit.framework */,
+				9FFC6C50B1B04E1BA17A01A7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84A06D9D182807E000E94B96 /* ShareThis */ = {
+			isa = PBXGroup;
+			children = (
+				84A06DC91828081F00E94B96 /* EmailService.h */,
+				84A06DCA1828081F00E94B96 /* EmailService.m */,
+				84A06DCB1828081F00E94B96 /* FacebookService.h */,
+				84A06DCC1828081F00E94B96 /* FacebookService.m */,
+				84A06DD11828081F00E94B96 /* KeyChainItemWrapper */,
+				84A06DD41828081F00E94B96 /* MessageService.h */,
+				84A06DD51828081F00E94B96 /* MessageService.m */,
+				84A06DDA1828081F00E94B96 /* ReadabilityActivityItem.h */,
+				84A06DDB1828081F00E94B96 /* ReadabilityActivityItem.m */,
+				84A06DDC1828081F00E94B96 /* ReadabilityService.h */,
+				84A06DDD1828081F00E94B96 /* ReadabilityService.m */,
+				84A06DDE1828081F00E94B96 /* ReadLaterService.h */,
+				84A06DDF1828081F00E94B96 /* ReadLaterService.m */,
+				84A06DE01828081F00E94B96 /* ShareThis.h */,
+				84A06DE11828081F00E94B96 /* ShareThis.m */,
+				84A06DE21828081F00E94B96 /* TwitterService.h */,
+				84A06DE31828081F00E94B96 /* TwitterService.m */,
+				84A06D9E182807E000E94B96 /* Supporting Files */,
+			);
+			path = ShareThis;
+			sourceTree = "<group>";
+		};
+		84A06D9E182807E000E94B96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84A06D9F182807E000E94B96 /* ShareThis-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84A06DB1182807E000E94B96 /* ShareThisTests */ = {
+			isa = PBXGroup;
+			children = (
+				84A06DB7182807E000E94B96 /* ShareThisTests.m */,
+				84A06DB2182807E000E94B96 /* Supporting Files */,
+			);
+			path = ShareThisTests;
+			sourceTree = "<group>";
+		};
+		84A06DB2182807E000E94B96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84A06DB3182807E000E94B96 /* ShareThisTests-Info.plist */,
+				84A06DB4182807E000E94B96 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84A06DC11828081F00E94B96 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				84A06DC21828081F00E94B96 /* Instapaper-Icon.png */,
+				84A06DC31828081F00E94B96 /* Instapaper-Icon@2x.png */,
+				84A06DC41828081F00E94B96 /* Pocket-Icon.png */,
+				84A06DC51828081F00E94B96 /* Pocket-Icon@2x.png */,
+				84A06DC61828081F00E94B96 /* Readability-Icon.png */,
+				84A06DC71828081F00E94B96 /* Readability-Icon@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		84A06DD11828081F00E94B96 /* KeyChainItemWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				84A06DD21828081F00E94B96 /* KeychainItemWrapper.h */,
+				84A06DD31828081F00E94B96 /* KeychainItemWrapper.m */,
+			);
+			name = KeyChainItemWrapper;
+			path = ../Code/KeyChainItemWrapper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84A06D97182807E000E94B96 /* ShareThis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A06DBB182807E000E94B96 /* Build configuration list for PBXNativeTarget "ShareThis" */;
+			buildPhases = (
+				372B1DFF556B42DFA98F2A7B /* Check Pods Manifest.lock */,
+				84A06D94182807E000E94B96 /* Sources */,
+				84A06D95182807E000E94B96 /* Frameworks */,
+				84A06D96182807E000E94B96 /* CopyFiles */,
+				A31D4F14BF704B8BAEEA14A8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareThis;
+			productName = ShareThis;
+			productReference = 84A06D98182807E000E94B96 /* libShareThis.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		84A06DA7182807E000E94B96 /* ShareThisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A06DBE182807E000E94B96 /* Build configuration list for PBXNativeTarget "ShareThisTests" */;
+			buildPhases = (
+				84A06DA4182807E000E94B96 /* Sources */,
+				84A06DA5182807E000E94B96 /* Frameworks */,
+				84A06DA6182807E000E94B96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84A06DAF182807E000E94B96 /* PBXTargetDependency */,
+			);
+			name = ShareThisTests;
+			productName = ShareThisTests;
+			productReference = 84A06DA8182807E000E94B96 /* ShareThisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84A06D90182807E000E94B96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Tipping Canoe";
+			};
+			buildConfigurationList = 84A06D93182807E000E94B96 /* Build configuration list for PBXProject "ShareThis" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84A06D8F182807E000E94B96;
+			productRefGroup = 84A06D99182807E000E94B96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84A06D97182807E000E94B96 /* ShareThis */,
+				84A06DA7182807E000E94B96 /* ShareThisTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84A06DA6182807E000E94B96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A06DB6182807E000E94B96 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		372B1DFF556B42DFA98F2A7B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A31D4F14BF704B8BAEEA14A8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84A06D94182807E000E94B96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A06DE41828081F00E94B96 /* EmailService.m in Sources */,
+				84A06DEF1828081F00E94B96 /* ShareThis.m in Sources */,
+				84A06DE81828081F00E94B96 /* KeychainItemWrapper.m in Sources */,
+				84A06DED1828081F00E94B96 /* ReadabilityService.m in Sources */,
+				84A06DE91828081F00E94B96 /* MessageService.m in Sources */,
+				84A06DF01828081F00E94B96 /* TwitterService.m in Sources */,
+				84A06DE51828081F00E94B96 /* FacebookService.m in Sources */,
+				84A06DEC1828081F00E94B96 /* ReadabilityActivityItem.m in Sources */,
+				84A06DEE1828081F00E94B96 /* ReadLaterService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A06DA4182807E000E94B96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A06DB8182807E000E94B96 /* ShareThisTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84A06DAF182807E000E94B96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84A06D97182807E000E94B96 /* ShareThis */;
+			targetProxy = 84A06DAE182807E000E94B96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84A06DB4182807E000E94B96 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A06DB5182807E000E94B96 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84A06DB9182807E000E94B96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84A06DBA182807E000E94B96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84A06DBC182807E000E94B96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F8D3D26FA4641DCBDB6E6A4 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/ShareThis.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareThis/ShareThis-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		84A06DBD182807E000E94B96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F8D3D26FA4641DCBDB6E6A4 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/ShareThis.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareThis/ShareThis-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		84A06DBF182807E000E94B96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareThis/ShareThis-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ShareThisTests/ShareThisTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		84A06DC0182807E000E94B96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareThis/ShareThis-Prefix.pch";
+				INFOPLIST_FILE = "ShareThisTests/ShareThisTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84A06D93182807E000E94B96 /* Build configuration list for PBXProject "ShareThis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A06DB9182807E000E94B96 /* Debug */,
+				84A06DBA182807E000E94B96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A06DBB182807E000E94B96 /* Build configuration list for PBXNativeTarget "ShareThis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A06DBC182807E000E94B96 /* Debug */,
+				84A06DBD182807E000E94B96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A06DBE182807E000E94B96 /* Build configuration list for PBXNativeTarget "ShareThisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A06DBF182807E000E94B96 /* Debug */,
+				84A06DC0182807E000E94B96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84A06D90182807E000E94B96 /* Project object */;
+}

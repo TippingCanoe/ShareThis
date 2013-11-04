@@ -1,14 +1,10 @@
 /* Copyright 2012 IGN Entertainment, Inc. */
 
 #import "ShareThis.h"
-#import "InstapaperActivityItem.h"
-#import "PocketActivityItem.h"
 #import "TwitterService.h"
 #import "FacebookService.h"
 #import "EmailService.h"
 #import "MessageService.h"
-#import "InstapaperService.h"
-#import "PocketService.h"
 #import "ReadabilityService.h"
 #import "ReadabilityActivityItem.h"
 
@@ -88,14 +84,6 @@ NSString *const AppWillTerminateNotificationName = @"appWillTerminate";
         case STServiceTypeMessage:
             [MessageService shareWithParams:params onViewController:viewController];
             break;
-        case STServiceTypeInstapaper:
-            [InstapaperService shareWithParams:params onViewController:viewController];
-            break;
-        case STServiceTypePocket:
-            if ([[ShareThis sharedManager] pocketAPIKey]) {
-                [PocketService shareWithParams:params onViewController:viewController];
-            }
-            break;
         case STServiceTypeReadability:
             if ([[ShareThis sharedManager] readabilityKey] && [[ShareThis sharedManager] readabilitySecret]) {
                 [ReadabilityService shareWithParams:params onViewController:viewController];
@@ -138,8 +126,6 @@ NSString *const AppWillTerminateNotificationName = @"appWillTerminate";
 - (void)showActivityView
 {
     NSArray *activityItems = [[NSArray alloc] initWithObjects:[self.params objectForKey:@"title"], [self.params objectForKey:@"url"], [self.params objectForKey:@"image"], nil];
-    InstapaperActivityItem *instapaperActivity = [[InstapaperActivityItem alloc] init];
-    PocketActivityItem *pocketActivity = [[PocketActivityItem alloc] init];
     ReadabilityActivityItem *readabilityActivity = [[ReadabilityActivityItem alloc] init];
     
 //    NSArray *applicationActivities;
@@ -147,11 +133,7 @@ NSString *const AppWillTerminateNotificationName = @"appWillTerminate";
     switch (self.contentType) {
         case STContentTypeAll:
         case STContentTypeArticle:
-            applicationActivities = [NSMutableArray arrayWithObject:instapaperActivity];
             
-            if (self.pocketAPIKey) {
-                [applicationActivities addObject:pocketActivity];
-            }
             
             if (self.readabilityKey && self.readabilitySecret) {
                 [applicationActivities addObject:readabilityActivity];
@@ -195,16 +177,6 @@ NSString *const AppWillTerminateNotificationName = @"appWillTerminate";
         switch (self.contentType) {
             case STContentTypeAll:
             case STContentTypeArticle:
-                [buttonTitles addObject:@"Add to Instapaper"];
-                if (self.pocketAPIKey) {
-                    [buttonTitles addObject:@"Add to Pocket"];
-                    [self.actionSheetServiceButtonList addObject:[[NSNumber alloc] initWithInt:STServiceTypePocket]];
-                }
-                
-                if (self.readabilityKey && self.readabilitySecret) {
-                    [buttonTitles addObject:@"Add to Readability"];
-                    [self.actionSheetServiceButtonList addObject:[[NSNumber alloc] initWithInt:STServiceTypeInstapaper]];
-                }
                 break;
             case STContentTypeVideo:
                 break;
@@ -249,16 +221,6 @@ NSString *const AppWillTerminateNotificationName = @"appWillTerminate";
         case STServiceTypeMessage:
             [MessageService shareWithParams:self.params onViewController:self.viewControllerToShowServiceOn];
             break;
-        case STServiceTypeInstapaper:
-            if (self.contentType == STContentTypeArticle || self.contentType == STContentTypeAll) {
-                [InstapaperService shareWithParams:self.params onViewController:self.viewControllerToShowServiceOn];
-            }
-            break;
-        case STServiceTypePocket:
-            if ((self.contentType == STContentTypeArticle || self.contentType == STContentTypeAll) && self.pocketAPIKey) {
-                [PocketService shareWithParams:self.params onViewController:self.viewControllerToShowServiceOn];
-            }
-            break;
         case STServiceTypeReadability:
             if ((self.contentType == STContentTypeArticle || self.contentType == STContentTypeAll) && self.readabilityKey && self.readabilitySecret) {
                 [ReadabilityService shareWithParams:self.params onViewController:self.viewControllerToShowServiceOn];
@@ -281,7 +243,6 @@ NSString *const AppWillTerminateNotificationName = @"appWillTerminate";
                               readabilitySecret:(NSString *)readabilitySecret
 {
     [FacebookService startSessionWithURLSchemeSuffix:suffix];
-    [ShareThis sharedManager].pocketAPIKey = pocketAPI;
     [ShareThis sharedManager].readabilityKey = readabilityKey;
     [ShareThis sharedManager].readabilitySecret = readabilitySecret;
 }
